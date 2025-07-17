@@ -65,7 +65,7 @@ python migratesqlMongo.py \
 
 ```bash
 python migratesqlMongo.py \
-  --srcSqlConnString "DRIVER={ODBC Driver 18 for SQL Server};SERVER=sqlserver.example.com;DATABASE=northwind;UID=demo;PWD=migrator;Encrypt=yes;TrustServerCertificate=yes" \
+  --srcSqlConnString "DRIVER={ODBC Driver 18 for SQL Server};SERVER=sqlserver.example.com;DATABASE=database;UID=user;PWD=password;Encrypt=yes;TrustServerCertificate=yes" \
   --tgtMongoConnString "mongodb+srv://USER:PASSWORD@SERVER.mongodb.net/?retryWrites=true&w=majority" \
   --sqlQuery "SELECT * FROM orders" \
   --tgtDb test \
